@@ -2,9 +2,15 @@
 
 #define LED_BUILTIN 2
 
-void blink(int temps) {
-    digitalWrite(LED_BUILTIN, HIGH);
-    delay(temps);
-    digitalWrite(LED_BUILTIN, LOW);
-    delay(temps);
+void blink(bool state) {
+    digitalWrite(LED_BUILTIN, state);
+}
+
+bool inversion(bool state, String& etat) {
+    if (state) {
+        etat = "allumé";
+    } else {
+        etat = "eteint";
+    }
+    return !state;
 }
