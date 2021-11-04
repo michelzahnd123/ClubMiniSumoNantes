@@ -1,10 +1,17 @@
 #include <Arduino.h>
-#include "ObjBlink.h"
+#include "led.h"
 
-BlinkObj led1(2, 500);
-BlinkObj led2(4, 1000);
+//bouton pin 15
+//led rouge pin 2
+//led verte pin 4
+//led blanche pin 16
+//led bleue pin 17
+Led ledRouge(2);
+Led ledVerte(4);
+Led ledBlanche(16);
+Led ledBleue(17);
 
-
+#define TEMPS 500
 
 void setup() {
   Serial.begin(115200);
@@ -12,7 +19,17 @@ void setup() {
 
 
 void loop() {
-  Serial.println(led1.getEtat());
-  delay(led1.getTimer());
-  led1.actEtat();
+  //faire un chenillard
+  ledRouge.on();
+  delay(TEMPS);
+  ledRouge.off();
+  ledVerte.on();
+  delay(TEMPS);
+  ledVerte.off();
+  ledBlanche.on();
+  delay(TEMPS);
+  ledBlanche.off();
+  ledBleue.on();
+  delay(TEMPS);
+  ledBleue.off();
 }
