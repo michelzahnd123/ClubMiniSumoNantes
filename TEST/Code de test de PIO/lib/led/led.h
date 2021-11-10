@@ -11,6 +11,7 @@ public:
     void off();
     void toggle();
     int getState();
+    void setPin(int pin);
 };
 
 

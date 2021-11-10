@@ -22,3 +22,7 @@ void Led::toggle() {
 int Led::getState() {
     return digitalRead(pin);
 }
+
+void Led::setPin() {
+    pinMode(pin, OUTPUT);
+}

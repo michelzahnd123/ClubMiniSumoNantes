@@ -21,3 +21,9 @@ void loop() {
         ledRouge.off();
     }
 }
+
+
+enum Etat {
+    OFF,
+    ON
+};
