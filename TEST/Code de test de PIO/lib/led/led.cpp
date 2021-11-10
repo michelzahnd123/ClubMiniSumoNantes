@@ -23,6 +23,6 @@ int Led::getState() {
     return digitalRead(pin);
 }
 
-void Led::setPin() {
+void Led::setPin(int pin) {
     pinMode(pin, OUTPUT);
 }
