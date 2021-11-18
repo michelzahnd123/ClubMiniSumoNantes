@@ -1,7 +1,14 @@
 #include <led.h>
 #include <Arduino.h>
 
+int Led::nb = 0;
+
+int Led::getNb() {
+    return this->nb;
+}
+
 Led::Led(int pin) {
+    this->nb++;
     this->pin = pin;
     pinMode(pin, OUTPUT);
     digitalWrite(pin, LOW);

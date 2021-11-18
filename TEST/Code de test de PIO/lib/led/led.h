@@ -5,6 +5,7 @@
 class Led {
 private:
     int pin;
+    static int nb;
 public:
     Led(int pin);
     void on();
@@ -12,6 +13,7 @@ public:
     void toggle();
     int getState();
     void setPin(int pin);
+    int getNb();
 };
 
 
