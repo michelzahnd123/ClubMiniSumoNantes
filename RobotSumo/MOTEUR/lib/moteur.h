@@ -15,5 +15,4 @@ public:
     void ralentir(int pin_moteur, int vitesse_encours, int vitesse_cible);
     bool vitesse_stable;
 };
-
 #endif
