@@ -4,8 +4,9 @@
 #include "joystick.h"
 
 
-Moteur moteurGauche(32);
+Moteur moteurGauche(32);            // commande moteur en PWM
 Moteur moteurDroit(33);
+Joystick 
 
 
 void Setup()

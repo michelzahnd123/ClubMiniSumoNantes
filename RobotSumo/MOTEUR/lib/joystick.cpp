@@ -24,3 +24,6 @@ void Joystick::setPinBouton(int pin_joystickBouton){    // bouton Joystick
     pinMode(this->pin_joystickBouton, INTPUT);
 }
 
+    getJoystickARX();
+    getJoystickGDY();
+    getJoystickBouton();

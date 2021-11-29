@@ -10,6 +10,9 @@ public:
     setPinARX(int pin_joystickARX);
     setPinGDY(int pin_joystickGDY);
     setPinBouton(int pin_joystickBouton);
-
+    Joystick(int pin_joystickARX, int pin_joystickGDY, int pin_joystickBouton);
+    getJoystickARX();
+    getJoystickGDY();
+    getJoystickBouton();
 };
 #endif
