@@ -24,6 +24,21 @@ void Joystick::setPinBouton(int pin_joystickBouton){    // bouton Joystick
     pinMode(this->pin_joystickBouton, INTPUT);
 }
 
-    getJoystickARX();
-    getJoystickGDY();
-    getJoystickBouton();
+// lecture & transformation des valeurs du joystick
+int Joystick::getJoystickARX();{                        // valeur entre 0 et 1023
+    valeurARX=analogRead(this->pin_joystickARX);
+    valeurARX_ms=map(valeurARX, 0,1023, 1000, 2000);    // entre 1000 et 2000
+    if(valeurARX_ms>1450 and valeurARX_ms<1550){valeurARX_ms=1500;}
+    return valeurARX_ms;
+}
+
+int Joystick::getJoystickGDY();{                        // valeur entre 0 et 1023
+    valeurGDY=analogRead(this->pin_joystickGDY);
+    valeurGDY_ms=map(valeurGDY, 0,1023, 1000, 2000);    // entre 1000 et 2000
+    if(valeurGDY_ms>1450 and valeurGDY_ms<1550){valeurGDY_ms=1500;}
+    return valeurGDY_ms;
+}
+
+bool Joystick::getJoystickBouton();{                     // booleen On - Off
+    return digitalRead(this->pin_joystickBouton)=etatBouton;
+}
