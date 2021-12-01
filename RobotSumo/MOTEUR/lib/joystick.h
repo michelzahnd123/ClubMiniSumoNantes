@@ -18,6 +18,6 @@ public:
     Joystick(int pin_joystickARX, int pin_joystickGDY, int pin_joystickBouton);
     int getJoystickARX();
     int getJoystickGDY();
-    int getJoystickBouton();
+    bool getJoystickBouton();
 };
 #endif

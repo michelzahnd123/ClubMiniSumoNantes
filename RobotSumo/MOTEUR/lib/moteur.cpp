@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#include <servo.h>
+#include <ESP32Servo.h>
 #include "moteur.h"
 
 // construction de moteur
