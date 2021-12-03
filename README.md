@@ -1,14 +1,15 @@
 # ClubMiniSumoNantes
 _Plateforme C Nantes Club de robots Mini SUMO_
 
-## AMBITION
+## INTRODUCTION
 L'ambition du projet est de concevoir et réaliser plusieurs robots et de s'engager dans le tournoi national de SUMO.
 Le groupe est composé de membres du FabLab de Nantes, Plateforme C.
 
 
 ## BRANCHES
-Le répertoire GitHub est structuré est 3 branches correspondant au niveau de validation des fonctionnalités :
+Le répertoire GitHub est structuré est 3 branches :
 1. **Branche MAIN**
+    - Elle contient la version stable du code
     - Branche de référence du code pour le robot et tous les clones que nous que nous souhaitons réaliser.
     - L'intérêt de cette branche est de constituer le code de référence pour optimiser finement la stratégie.
 
@@ -29,8 +30,29 @@ Plusieurs options ont été prises concernant le codage et la façon de coder un
 - Gestion des versions avec **GIT** et gestion distante **GitHub**
 - Editeur de code **VSCode** et **platformIO**
   
-### Compilation
+### L'arborescence du projet
 Afin que chaque membre du projet puisse apporter sa contribution, nous avons défini l'arborescence utile.
+
+```bash
+.
+├── RobotSumo # dossier racine du projet
+│   ├── lib # dossier contenant les libs crée pour le projet
+│   │   ├── Moteur # exemple de lib sous la forme d'un sous projet
+│   │   │   └── src # source de la lib
+│   │   │       ├── main.cpp
+│   │   │       ├── moteur.cpp
+│   │   │       └── moteur.h
+│   │   └── ...
+│   └── src # souce du projet principale
+│       ├── main.cpp
+│       └── ...
+├── Test # dossier de test divers
+│   └── ...
+└── Resource # dossier de resource du projet
+    └── ...
+```
+
+
 
 > lib
 
