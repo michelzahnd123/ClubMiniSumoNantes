@@ -9,58 +9,59 @@ Le groupe est composé de membres du FabLab de Nantes, Plateforme C.
 ## BRANCHES
 Le répertoire GitHub est structuré est 3 branches :
 1. **Branche MAIN**
-    - Elle contient la version stable du code
-    - Branche de référence du code pour le robot et tous les clones que nous que nous souhaitons réaliser.
-    - L'intérêt de cette branche est de constituer le code de référence pour optimiser finement la stratégie.
+    - Elle contient la version stable du code. Le code a été testé, revu et validé.
+    - Le but de cette branche est de constituer le code de référence pour les clones que nous souhaitons réaliser.
+    - Le code de référence sera le point de départ pour optimiser finement la stratégie.
 
 2. **Branche DEV**
-    - Branche de stockage des fonctionnalités qui commencent à fonctionner de manière autonome.
-    - L'intérêt de cette branche est de tester la compatibilité et les interfaces entre les fonctionnalités.
+    - Elle contient les fonctionnalités terminées.
+    - Les fonctionnalités peuvent avoir encore des bugs ou ne pas s'interfacer correctement entre elles.
+    - L'intérêt de cette branche est de faire des tests et de permettre les échanges de code entre les membres du groupe.
 
-3. **Branche Test-PIO**
-    - Branche temporaire pour les fonctionnalités spécifiques en cours de développement.
-    - L'intérêt de cette branche est de faciliter l'échange du code entre membres du groupe ;)
+3. **Branche de fonctionnalités**
+    - Elle sert à développer les fonctionnalités.
+    - Elle est vouée à disparaître lorsque la fonctionnalité est terminée.
 
   
-## Developpement
-### Les choix technique
-Plusieurs options ont été prises concernant la conseption des robot :
+## DEVELOPPEMENT
+### Les choix techniques
+Plusieurs options ont été prises concernant la conception des robots :
 - **C++** (*Arduino*)
-- ESP32
+- **ESP32**
 - **P**rogrammation **O**rientée **O**bjet
 - IDE : **platformIO**
   
 ### L'arborescence du projet
-Afin que chaque membre du projet puisse apporter sa contribution, nous avons défini l'arborescence utile.
+Afin que chaque membre puisse apporter sa contribution, nous utilisons l'arborescence :
 
 ```bash
 .
 ├── RobotSumo # dossier racine du projet
-│   ├── lib # dossier contenant les libs crée pour le projet
-│   │   ├── Moteur # exemple de lib sous la forme d'un sous projet
+│   ├── lib # dossier contenant les libs crées pour le projet
+│   │   ├── Moteur # exemple de lib sous forme d'un sous projet
 │   │   │   └── src # source de la lib
 │   │   │       ├── main.cpp
 │   │   │       ├── moteur.cpp
 │   │   │       └── moteur.h
 │   │   └── ...
-│   └── src # souce du projet principale
+│   └── src # source du projet principal
 │       ├── main.cpp
 │       └── ...
-├── Test # dossier de test divers
+├── Test # dossier de tests divers
 │   └── ...
-└── Resource # dossier de resource du projet
+└── Resource # dossier de ressources du projet
     └── ...
 ```
 
 
-
 > lib
 
-    Chaque Bibliothère crées pour le projet est dans son propre projet PlatfomeIO qui permet des les tester individuelement
-    Elle sont dans le dossier Lib du projet pour être utiliser par le code pricipale.
+    Chaque fonctionnalité crées pour le projet est dans son propre dossier PlatfomeIO.
+    Ce qui permet de tester chaque fonctionnalité individuellement.
+    Elles sont rangées dans le dossier "Lib" du projet pour être utilisées par le code source du projet principal.
 
 > src
 
-    Contient le programme principal "main.cpp" (void Setup & void Loop)
+    Contient le programme principal "main.cpp"
     Il est destiné à tester le fonctionnement de la classe.
 
