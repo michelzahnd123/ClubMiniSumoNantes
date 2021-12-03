@@ -22,13 +22,13 @@ Le répertoire GitHub est structuré est 3 branches :
     - L'intérêt de cette branche est de faciliter l'échange du code entre membres du groupe ;)
 
   
-## CODAGE
-### Les partis pris
-Plusieurs options ont été prises concernant le codage et la façon de coder un robot dans le groupe PCS :
-- **C++** Arduino sur processeur ESP32
+## Developpement
+### Les choix technique
+Plusieurs options ont été prises concernant la conseption des robot :
+- **C++** (*Arduino*)
+- ESP32
 - **P**rogrammation **O**rientée **O**bjet
-- Gestion des versions avec **GIT** et gestion distante **GitHub**
-- Editeur de code **VSCode** et **platformIO**
+- IDE : **platformIO**
   
 ### L'arborescence du projet
 Afin que chaque membre du projet puisse apporter sa contribution, nous avons défini l'arborescence utile.
@@ -56,9 +56,8 @@ Afin que chaque membre du projet puisse apporter sa contribution, nous avons dé
 
 > lib
 
-    Chaque classe d'ojets a ses propres fichiers stockée dans **lib**
-      - entête de la classe "fichier.h"
-      - description des membres de la classe "fichier.cpp"
+    Chaque Bibliothère crées pour le projet est dans son propre projet PlatfomeIO qui permet des les tester individuelement
+    Elle sont dans le dossier Lib du projet pour être utiliser par le code pricipale.
 
 > src
 
