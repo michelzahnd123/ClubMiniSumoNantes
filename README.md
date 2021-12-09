@@ -67,8 +67,8 @@ Afin que chaque membre puisse apporter sa contribution, nous utilisons l'arbores
 
 # Affectation des pins de l'ESP32
 
-N° pin | fonction | usage | commentaire
+GPIO | fonction | usage | commentaire
 ----- | ----- | ----- | -----
  | | | 
- | | | 
- | | | 
+32 | pwm | moteur droit | 
+33 | pwm | moteur gauche | 
