@@ -16,4 +16,5 @@ void Setup()
 void Loop()
 {
    // todo
+   delay(1);
 }
