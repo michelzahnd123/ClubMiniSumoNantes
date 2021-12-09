@@ -65,3 +65,10 @@ Afin que chaque membre puisse apporter sa contribution, nous utilisons l'arbores
     Contient le programme principal "main.cpp"
     Il est destiné à tester le fonctionnement de la classe.
 
+# Affectation des pins de l'ESP32
+
+N° pin | fonction | usage | commentaire
+----- | ----- | ----- | -----
+ | | | 
+ | | | 
+ | | | 
