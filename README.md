@@ -71,11 +71,11 @@ GPIO | Classe | Instance | Entree/Sortie
 ----- | ----- | ----- | -----
  2 | presence | JS40F AG | es
  4 | noir blanc | cny70 G | es
- 5 | bouton | contact AV | 
+ 5 | bouton | contact AV | es
 12 | sortie | LED work | s
 13 | | | es
-14 | | | e
-15 | bouton | depart ON | e
+14 | | | es
+15 | bouton | depart ON | es
 16 | M6050 | inter | es
 17 | | | es
 18 | noir blanc | cny70 D | es
