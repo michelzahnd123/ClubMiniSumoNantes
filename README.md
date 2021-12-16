@@ -65,10 +65,32 @@ Afin que chaque membre puisse apporter sa contribution, nous utilisons l'arbores
     Contient le programme principal "main.cpp"
     Il est destiné à tester le fonctionnement de la classe.
 
-# Affectation des pins de l'ESP32
+# Affectation des broches ESP32
 
-N° pin | fonction | usage | commentaire
+GPIO | Classe | Instance | Entree/Sortie
 ----- | ----- | ----- | -----
- | | | 
- | | | 
- | | | 
+ 2 | Presence | JS40F_G | es
+ 4 | NoirBlanc | cny70_G | es
+ 5 | Bouton | contactAV | es
+12 | Led | led_work | s
+13 | | | es
+14 | | | es
+15 | Bouton | departON | es
+16 | Accelero | M6050 (inter) | es
+17 | | | es
+18 | NoirBlanc | cny70_D | es
+19 | NoirBlanc | cny70_AV | es
+21 | I2C | SDA | es
+22 | I2C | SCL | es
+23 | Presence | JS40F_D | es
+25 | | | es
+26 | | | es
+27 | | | es
+32 | Moteur | moteurDroite (pwm) | es
+33 | Moteur | moteurGauche (pwm) | es
+34 | Distance | E03_RG (inter) | e
+35 | Distance | E03_AG (inter) | e
+36 | Distance | E03_AD (inter) | e
+39 | Distance | E03_RD (inter) | e
+VIN | 5V | alimentation robot | --
+EN | RESET | arret robot | --
