@@ -69,28 +69,30 @@ Afin que chaque membre puisse apporter sa contribution, nous utilisons l'arbores
 
 GPIO | Classe | Instance | Entree/Sortie
 ----- | ----- | ----- | -----
+ 1 | Comm | TX | bleu
  2 | Presence | JS40F_G | es
+ 3 | Comm | RX | vert
  4 | NoirBlanc | cny70_G | es
- 5 | Bouton | contactAV | es
-12 | Led | led_work | s
-13 | | | es
-14 | | | es
-15 | Bouton | departON | es
-16 | Accelero | M6050 (inter) | es
-17 | | | es
+ 5 | Bouton | contactAV | es - gris
+12 | Led | led_work | s - jaune
+13 | Comm | Beep | es - gris
+14 | | | es - LIBRE
+15 | Bouton | departON | es - bleu
+16 | Accelero | M6050 (inter) | es - marron
+17 | Comm | V LiPo | es - marron
 18 | NoirBlanc | cny70_D | es
 19 | NoirBlanc | cny70_AV | es
-21 | I2C | SDA | es
-22 | I2C | SCL | es
+21 | I2C | SDA | es - jaune
+22 | I2C | SCL | es - blanc
 23 | Presence | JS40F_D | es
-25 | | | es
-26 | | | es
-27 | | | es
-32 | Moteur | moteurDroite (pwm) | es
-33 | Moteur | moteurGauche (pwm) | es
+25 | | | es - LIBRE
+26 | | | es - LIBRE
+27 | | | es - LIBRE
+32 | Moteur | moteurDroite (pwm) | es - blanc
+33 | Moteur | moteurGauche (pwm) | es - blanc
 34 | Distance | E03_RG (inter) | e
 35 | Distance | E03_AG (inter) | e
 36 | Distance | E03_AD (inter) | e
 39 | Distance | E03_RD (inter) | e
-VIN | 5V | alimentation robot | --
-EN | RESET | arret robot | --
+VIN | 8V | | --
+EN | RESET | arret robot | orange
