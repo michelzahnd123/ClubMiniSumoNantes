@@ -80,8 +80,8 @@ GPIO | Classe | Instance | Entree/Sortie
 15 | Bouton | departON | es - bleu
 16 | Accelero | M6050 (inter) | es - marron
 17 | Comm | V LiPo | es - marron
-18 | NoirBlanc | cny70_D | es
-19 | NoirBlanc | cny70_AV | es
+18 | NoirBlanc | cny70_AV | es
+19 | NoirBlanc | cny70_D | es
 21 | I2C | SDA | es - jaune
 22 | I2C | SCL | es - blanc
 23 | Presence | JS40F_D | es
