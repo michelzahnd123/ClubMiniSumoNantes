@@ -1,32 +1,20 @@
 #include <Arduino.h>
 #include "led.h"
+#define pin_ledWork 12
 
-Led ledRouge(2);
-Led ledVerte(4);
-Led ledBlanche(16);
-Led ledBleue(17);
-
-int tempsPause=125;
+Led ledWork(pin_ledWork);
+int tempsAllume=50;
+int tempsEteint=949;
 
 void setup() {
   Serial.begin(115200);
-  ledRouge.setPinLed(2);
-  ledVerte.setPinLed(4);
-  ledBlanche.setPinLed(16);
-  ledBleue.setPinLed(17);
+  ledWork.setPinLed(pin_ledWork);
 }
 
 void loop() {
-  ledRouge.on();
-    delay(tempsPause);
-  ledRouge.off();
-  ledVerte.on();
-    delay(tempsPause);
-  ledVerte.off();
-  ledBlanche.on();
-    delay(tempsPause);
-  ledBlanche.off();
-  ledBleue.on();
-    delay(tempsPause);
-  ledBleue.off();
+  Serial.println(" LED ");
+  ledWork.on();
+    delay(tempsAllume);
+  ledWork.off();
+    delay(tempsEteint);
 }
