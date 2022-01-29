@@ -11,12 +11,12 @@ Bouton::Bouton(int pin_bouton){
 
 // initialisation
 void Bouton::setPinBouton(int pin_bouton){
-    pinMode(this->pin_bouton,INPUT);
+    pinMode(this->pin_bouton,INPUT_PULLUP);
 }
 
-// entrée valeur sans rebond
+// entrée valeur inversee & sans rebond
 bool Bouton::getEtatBouton(){
-    appuiBouton=digitalRead(this->pin_bouton);
+    appuiBouton=!digitalRead(this->pin_bouton);
     delayMicroseconds(this->tempsAcquisition);
-    return appuiBouton&&digitalRead(this->pin_bouton);
+    return appuiBouton&&(!digitalRead(this->pin_bouton));
 }
