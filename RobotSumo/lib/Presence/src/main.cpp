@@ -1,7 +1,10 @@
 #include <Arduino.h>
+#include "presence.h"
+#define pin_JS40F_G 2
+#define pin JS40F_D 23
 
 void setup() {
-  // put your setup code here, to run once:
+  Serial.begin(115200);
 }
 
 void loop() {
