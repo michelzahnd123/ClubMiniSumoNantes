@@ -7,20 +7,20 @@ Le groupe est composé de membres du FabLab de Nantes, Plateforme C.
 
 
 ## BRANCHES
-Le répertoire GitHub est structuré est 3 branches :
-1. **Branche MAIN**
-    - Elle contient la version stable du code. Le code a été testé, revu et validé.
-    - Le but de cette branche est de constituer le code de référence pour les clones que nous souhaitons réaliser.
-    - Le code de référence sera le point de départ pour optimiser finement la stratégie.
+Le répertoire GitHub est structuré en 2 branches principales :  
+1. **Branche MAIN**  
+    - Elle contient la version stable du code. Le code a été testé, revu et validé.  
+    - Le but de cette branche est de constituer le code de référence pour les clones que nous souhaitons réaliser.  
+    - Le code de référence sera le point de départ pour optimiser finement la stratégie.  
 
-2. **Branche DEV**
-    - Elle contient les fonctionnalités terminées.
-    - Les fonctionnalités peuvent avoir encore des bugs ou ne pas s'interfacer correctement entre elles.
-    - L'intérêt de cette branche est de faire des tests et de permettre les échanges de code entre les membres du groupe.
+2. **Branche DEV**  
+    - Elle contient les fonctionnalités en cours de développement ou terminées.  
+    - Les fonctionnalités peuvent avoir encore des bugs ou ne pas s'interfacer correctement entre elles.  
+    - L'intérêt de cette branche est de faire des tests et de permettre les échanges de code entre les membres du groupe.  
 
-3. **Branche de fonctionnalités**
-    - Elle sert à développer les fonctionnalités.
-    - Elle est vouée à disparaître lorsque la fonctionnalité est terminée.
+**Branche temporaire**  
+- Il est parfois nécessaire de créer une nouvelle branche pour développer une fonctionnalité ou réaliser des essais.  
+- Cette branche doit disparaître lorsque la fonctionnalité est terminée.  
 
   
 ## DEVELOPPEMENT
